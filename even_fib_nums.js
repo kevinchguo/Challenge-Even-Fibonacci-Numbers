@@ -16,11 +16,11 @@ function _sumFibs(maxFibValue) {
     startNum = fibArray[increment] + fibArray[increment + 1]; // 0 + 1
     fibArray.push(startNum); // push new answer into fibArray
     if (fibArray[increment] % 2 === 0) { //check if fibArray[i] is an even number
-      let evenNum = fibArray[increment] //if even number 0 + an even num and keep updating sum
+      let evenNum = fibArray[increment]; //if even number 0 + an even num and keep updating sum
       sum = sum + evenNum;
     }
-    increment++ //increment by 1 to loop through the next arr index
-    startNum += fibArray[increment] //update the number that its being added by
+    increment++; //increment by 1 to loop through the next arr index
+    startNum += fibArray[increment]; //update the number that its being added by
   } while (fibArray[increment] <= maxFibValue); //stop when the given param equals the highest num in the fib arry
   return sum;
 }
