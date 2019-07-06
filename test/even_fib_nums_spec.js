@@ -1,22 +1,22 @@
-var fibonnaciNums = require( './../even_fib_nums.js' );
-var chai = require( 'chai' );
+var fibonnaciNums = require('./../even_fib_nums.js');
+var chai = require('chai');
 var should = chai.should();
 
-describe( 'Sum of even numbers in the Fibonnacci sequence', function() {
+describe('Sum of even numbers in the Fibonnacci sequence', function () {
 
-  it( 'should return the sum of all even Fibonacci numbers when given 13', function() {
-    var sum = fibonnaciNums.sumFibs( 13 );
-    sum.should.equal( 10 );
+  it('should return the sum of all even Fibonacci numbers when given 13', function () {
+    var sum = fibonnaciNums.sumFibs(13);
+    sum.should.equal(10);
   });
 
-  it( 'should return the sum of all even Fibonacci numbers when given 34', function() {
-    var sum = fibonnaciNums.sumFibs( 34 );
-    sum.should.equal( 44 );
+  it('should return the sum of all even Fibonacci numbers when given 34', function () {
+    var sum = fibonnaciNums.sumFibs(34);
+    sum.should.equal(44);
   });
 
   // when the 2 tests pass, unskip the next test and
   // change the expected value to the correct result
-  it( 'should return the sum of all even Fibonacci numbers when given 4,000,000', function() {
+  it('should return the sum of all even Fibonacci numbers when given 4,000,000', function () {
     //.skip skips the test and turns the test blue in npm test
     var sum = fibonnaciNums.sumFibs(4000000);
 
@@ -34,10 +34,10 @@ describe( 'Sum of even numbers in the Fibonnacci sequence', function() {
  */
 
 // unskip the following test to test your highestFibonacciNumber() function
-describe( 'Highest number in Fibonacci sequence', function() {
-  it( 'should return the highest Fibonacci number less than the given input', function() {
-    var highest = fibonnaciNums.highestFibonacciNumber( 100 );
-    highest.should.equal( 89 );
+describe('Highest number in Fibonacci sequence', function () {
+  it('should return the highest Fibonacci number less than the given input', function () {
+    var highest = fibonnaciNums.highestFibonacciNumber(100);
+    highest.should.equal(89);
   });
 });
 
